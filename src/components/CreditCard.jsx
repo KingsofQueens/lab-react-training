@@ -33,4 +33,35 @@ const CreditCard = (props) => {
   );
 };
 
+// Correct Answer
+// import visaImage from './../assets/images/visa.png';
+// import masterCardImage from './../assets/images/master-card.svg';
+
+// const normalizeNumber = (value) => {
+//   return String(value).padStart(2, '0').slice(-2);
+// };
+
+// const censorCreditCardNumber = (value) => {
+//   return `•••• `.repeat(3) + value.slice(-4);
+// };
+
+// const CreditCard = (props) => {
+//   return (
+//     <div style={{ color: props.color, backgroundColor: props.bgColor }}>
+//       <span>{props.type}</span>
+//       <img
+//         src={props.type === 'Visa' ? visaImage : masterCardImage}
+//         alt={props.type}
+//       />
+//       <h4>{censorCreditCardNumber(props.number)}</h4>
+//       <span>
+//         Expires {normalizeNumber(props.expirationMonth)}/
+//         {normalizeNumber(props.expirationYear)} {props.bank}
+//       </span>
+//       <br />
+//       <span>{props.owner}</span>
+//     </div>
+//   );
+// };
+
 export default CreditCard;
